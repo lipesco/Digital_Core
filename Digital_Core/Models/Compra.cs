@@ -33,3 +33,5 @@ namespace Digital_Core.Models
         public virtual ICollection<ArtigoCompra> ListaDeObjectosArtigoCompra { get; set; }
 
     }
+
+}

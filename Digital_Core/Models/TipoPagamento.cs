@@ -24,3 +24,4 @@ namespace Digital_Core.Models
         public virtual ICollection<Compra> ListaTipoPagamento { get; set; }
 
     }
+}

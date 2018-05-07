@@ -103,10 +103,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artigo.cs" />
     <Compile Include="Models\ArtigoCompra.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Compra.cs" />
+    <Compile Include="Models\Digital_CoreDb.cs" />
     <Compile Include="Models\TipoArtigo.cs" />
     <Compile Include="Models\TipoPagamento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
