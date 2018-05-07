@@ -95,7 +95,8 @@ namespace Digital_Core.Migrations
                 new Compra {ID=8, dataCompra=new DateTime(2018,05,06), dataEntrega=new DateTime(2018,05,07), ClienteFK=4, PagamentoFK=1 },
                 new Compra {ID=9, dataCompra=new DateTime(2018,05,06), dataEntrega=new DateTime(2018,05,07), ClienteFK=5, PagamentoFK=3 },
                 new Compra {ID=10, dataCompra=new DateTime(2018,05,06), dataEntrega=new DateTime(2018,05,07), ClienteFK=3, PagamentoFK=2 },
-                new Compra {ID=11, dataCompra=new DateTime(2018,05,07), dataEntrega=new DateTime(2018,05,08), ClienteFK=3, PagamentoFK=2 }
+                new Compra {ID=11, dataCompra=new DateTime(2018,05,07), dataEntrega=new DateTime(2018,05,08), ClienteFK=3, PagamentoFK=2 },
+                new Compra {ID=12, dataCompra=new DateTime(2018,05,07), dataEntrega=new DateTime(2018,05,08), ClienteFK=4, PagamentoFK=1 }
 
             };
             compra.ForEach(C => context.Compra.AddOrUpdate(c => c.dataCompra, C));
@@ -114,7 +115,8 @@ namespace Digital_Core.Migrations
                 new ArtigoCompra {ID=8, IDProd=2, IDCompr=8, quantidade=1, IVA="23" },
                 new ArtigoCompra {ID=9, IDProd=7, IDCompr=9, quantidade=1, IVA="23" },
                 new ArtigoCompra {ID=10, IDProd=1, IDCompr=10, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=11, IDProd=3, IDCompr=11, quantidade=1, IVA="23" }
+                new ArtigoCompra {ID=11, IDProd=3, IDCompr=11, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=12, IDProd=3, IDCompr=12, quantidade=1, IVA="23" }
             };
             artigoCompra.ForEach(PC => context.ArtigoCompra.AddOrUpdate(pc => pc.IDProd, PC));
             context.SaveChanges();
