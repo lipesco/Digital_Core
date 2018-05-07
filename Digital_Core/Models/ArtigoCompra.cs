@@ -17,9 +17,9 @@ namespace Digital_Core.Models
         //***********************************************************************
         // definição da chave forasteira (FK) que referencia a classe Artigo
         //***********************************************************************
-        [ForeignKey("IDProd")]
+        [ForeignKey("IDArtig")]
         public Artigo Artigo { get; set; }
-        public int IDProd { get; set; }
+        public int IDArtig { get; set; }
 
         //***********************************************************************
         // definição da chave forasteira (FK) que referencia a classe Compra

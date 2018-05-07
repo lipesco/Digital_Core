@@ -105,20 +105,23 @@ namespace Digital_Core.Migrations
             //*********************************************************************
             // adiciona Relação Compras & Artigo
             var artigoCompra = new List<ArtigoCompra> {
-                new ArtigoCompra {ID=1, IDProd=1, IDCompr=1, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=2, IDProd=4, IDCompr=2, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=3, IDProd=8, IDCompr=3, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=4, IDProd=3, IDCompr=4, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=5, IDProd=1, IDCompr=5, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=6, IDProd=5, IDCompr=6, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=7, IDProd=6, IDCompr=7, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=8, IDProd=2, IDCompr=8, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=9, IDProd=7, IDCompr=9, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=10, IDProd=1, IDCompr=10, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=11, IDProd=3, IDCompr=11, quantidade=1, IVA="23" },
-                new ArtigoCompra {ID=12, IDProd=3, IDCompr=12, quantidade=1, IVA="23" }
+                new ArtigoCompra {ID=1, IDArtig=1, IDCompr=1, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=2, IDArtig=2, IDCompr=1, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=3, IDArtig=4, IDCompr=2, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=4, IDArtig=8, IDCompr=3, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=5, IDArtig=4, IDCompr=3, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=6, IDArtig=1, IDCompr=3, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=7, IDArtig=3, IDCompr=4, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=8, IDArtig=1, IDCompr=5, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=9, IDArtig=5, IDCompr=6, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=10, IDArtig=6, IDCompr=7, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=11, IDArtig=2, IDCompr=8, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=12, IDArtig=7, IDCompr=9, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=13, IDArtig=1, IDCompr=10, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=14, IDArtig=3, IDCompr=11, quantidade=1, IVA="23" },
+                new ArtigoCompra {ID=15, IDArtig=3, IDCompr=12, quantidade=1, IVA="23" }
             };
-            artigoCompra.ForEach(PC => context.ArtigoCompra.AddOrUpdate(pc => pc.IDProd, PC));
+            artigoCompra.ForEach(PC => context.ArtigoCompra.AddOrUpdate(pc => pc.IDCompr, PC));
             context.SaveChanges();
 
         }
